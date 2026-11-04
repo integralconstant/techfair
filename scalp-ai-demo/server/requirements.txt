@@ -1,0 +1,9 @@
+# Install torch and torchvision first, matching your machine (see README.md):
+#   NVIDIA GPU: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+#   CPU only  : pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Keep this file ASCII only: pip on Windows reads it as cp949 and fails on Korean text.
+timm==1.0.28
+pillow
+fastapi
+uvicorn[standard]
+python-multipart

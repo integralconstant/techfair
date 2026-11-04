@@ -1,0 +1,4 @@
+best_model_v11_augment_탈모 -> 탈모 지표
+FINAL_3CLASS_p010_fold0_모낭사이홍반 -> 모발사이홍반 지표
+seed42_fold0 -> 각질 지표
+sebum_fold0 -> 피지 지표

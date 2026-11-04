@@ -1,0 +1,163 @@
+{
+  "models": [
+    {
+      "id": "flakes",
+      "name": "각질",
+      "filename": "7_4level_fold0_각질.pth",
+      "architecture": "vit_base_patch16_dinov3",
+      "num_classes": 4,
+      "input_size": 384,
+      "resize_size": 384,
+      "resize_mode": "squash",
+      "interpolation": "bicubic",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "pooling": "cls_mean",
+      "head_activation": "identity",
+      "labels": [
+        "정상",
+        "경증",
+        "중등도",
+        "중증"
+      ],
+      "labels_confirmed": true,
+      "grade_indices": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "grade_labels": [
+        "정상",
+        "경중등도",
+        "중증"
+      ],
+      "grading_method": "probability_merge",
+      "excluded_classes": [],
+      "preprocessing_version": "flakes-384-square-v1",
+      "expected_sha256": "2a4c942cacab62f6d8c80bb353885d3f381e540c5f43ab9f5e4a38e7348db38d",
+      "settings_source": "각질량 코드/train.py, test_eval.py; seed42_fold0.pth",
+      "settings_verified": true
+    },
+    {
+      "id": "sebum",
+      "name": "피지 유무",
+      "filename": "sebum_fold0.pth",
+      "architecture": "vit_base_patch16_dinov3",
+      "num_classes": 3,
+      "input_size": 384,
+      "resize_size": 384,
+      "interpolation": "bicubic",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "labels": [
+        "정상",
+        "경증",
+        "중등도이상"
+      ],
+      "labels_confirmed": true,
+      "grade_indices": [
+        0,
+        1,
+        1
+      ],
+      "excluded_classes": [],
+      "settings_verified": true,
+      "classifier": "sebum_attention_fusion",
+      "bundled_path": "model_packages/sebum/weights/sebum_fold0.pth",
+      "resize_mode": "squash",
+      "grade_labels": [
+        "무",
+        "유"
+      ],
+      "grading_method": "probability_merge",
+      "preprocessing_version": "sebum-384-attention-v1",
+      "expected_sha256": "d5519a5f3c0c21c25cf18d312f41b72a2ef67a3db556605b0f8d79314f4319d0",
+      "settings_source": "각질, 피지.zip / 피지/predict.py; sebum_fold0.pth"
+    },
+    {
+      "id": "hair_loss",
+      "name": "탈모 여부",
+      "filename": "best_model_v11_augment_탈모.pth",
+      "architecture": "efficientnet_b4",
+      "num_classes": 3,
+      "input_size": 380,
+      "resize_size": 384,
+      "interpolation": "bicubic",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "labels": [
+        "정상",
+        "경증",
+        "중증"
+      ],
+      "labels_confirmed": true,
+      "grade_indices": [
+        0,
+        1,
+        2
+      ],
+      "excluded_classes": [],
+      "settings_verified": false
+    },
+    {
+      "id": "erythema",
+      "name": "모낭사이홍반",
+      "filename": "FINAL_3CLASS_p010_fold0_모낭사이홍반.pth",
+      "architecture": "vit_base_patch14_dinov2",
+      "num_classes": 3,
+      "input_size": 392,
+      "resize_size": 392,
+      "interpolation": "bicubic",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ],
+      "pooling": "cls_mean",
+      "head_activation": "identity",
+      "labels": [
+        "정상",
+        "경증",
+        "중증"
+      ],
+      "labels_confirmed": true,
+      "grade_indices": [
+        0,
+        1,
+        2
+      ],
+      "excluded_classes": [],
+      "settings_verified": false
+    }
+  ]
+}

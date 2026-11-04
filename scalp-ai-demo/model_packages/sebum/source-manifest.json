@@ -1,0 +1,9 @@
+{
+  "archive": "각질, 피지.zip",
+  "files": {
+    "predict.py": "d1c3b525a6aa7311dec89ee110e7cb57f4568acb9ba32fb99cf955b6132d9e37",
+    "INTEGRATION.md": "21be38e682e3e7676c29c8dec1e8d3df2ddad3e474027008085a622bd8459aa3",
+    "requirements.txt": "2c79da1f9cf8e8642556ffdcc5d846ae25ebe305c7779ded24324e93ce4360f1",
+    "weights/sebum_fold0.pth": "d5519a5f3c0c21c25cf18d312f41b72a2ef67a3db556605b0f8d79314f4319d0"
+  }
+}

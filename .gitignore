@@ -1,0 +1,25 @@
+scalp-ai-demo/.venv/
+**/__pycache__/
+*.py[cod]
+*.pth
+scalp-ai-demo/.runtime/
+scalp-ai-demo/models/
+scalp-ai-demo/test-results/
+backups/
+scalp-ai-demo/data/
+
+# Local environments, member databases and secrets
+.venv/
+**/__pycache__/
+*.py[cod]
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+scalp-ai-demo/server/data/
+
+# Excluded at user request
+img-vid/

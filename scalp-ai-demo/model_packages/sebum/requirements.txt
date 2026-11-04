@@ -1,0 +1,6 @@
+# Install torch/torchvision first. See INTEGRATION.md.
+#   NVIDIA GPU: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+#   CPU only:   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+timm==1.0.28
+pillow==11.3.0
